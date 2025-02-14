@@ -19,12 +19,13 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         textTheme: GoogleFonts.balooBhai2TextTheme(),
       ),
-      initialRoute: '/', // Route awal
+      initialRoute: '/login', // Route awal
       /*
         Routes: Inisialisasi semua yang berkaitan dengan
       */
       routes: {
         // disable login to make it easier
+        '/login': (context) => LoginPage(), // Halaman login
         '/': (context) => Home(), // Halaman login sebagai default
         '/profile': (context) => ProfileScreen(),
         '/report': (context) => ReportPage(),

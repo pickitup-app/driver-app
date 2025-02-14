@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:pickitupdriver/services/api_services.dart'; // Import layanan API
-import 'package:pickitupdriver/screens/login_page.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -158,15 +157,6 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
               SizedBox(height: 10),
-              TextButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, '/register');
-                },
-                child: Text(
-                  'Sign Up',
-                  style: GoogleFonts.balooBhai2(color: Color(0XFF6D9773)),
-                ),
-              ),
             ],
           ),
         ),
