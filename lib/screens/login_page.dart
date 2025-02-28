@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:pickitupdriver/services/api_services.dart'; // Import layanan API
+import 'package:pickitupdriver/services/api_service.dart'; // Import layanan API
 
 class LoginPage extends StatefulWidget {
   @override
@@ -39,7 +39,7 @@ class _LoginPageState extends State<LoginPage> {
 
     if (response['success']) {
       // Navigasi ke halaman home jika login berhasil
-      Navigator.pushNamed(context, '/home');
+      Navigator.pushNamed(context, '/');
     } else {
       // Tampilkan pesan error
       ScaffoldMessenger.of(context).showSnackBar(
