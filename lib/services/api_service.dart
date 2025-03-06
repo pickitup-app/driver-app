@@ -9,7 +9,6 @@ class ApiService {
   Future<Map<String, dynamic>> login(String email, String password) async {
     final DeviceInfoPlugin deviceInfo = DeviceInfoPlugin();
     AndroidDeviceInfo androidInfo = await deviceInfo.androidInfo;
-
     try {
       final response = await http.post(
         Uri.parse('$apiBaseUrl/login'),
@@ -47,7 +46,7 @@ class ApiService {
         };
       }
     } catch (e) {
-      return {'success': false, 'message': 'An error occurred: $e'};
+      return {'success': false, 'message': 'Wrong email or password'};
     }
   }
 

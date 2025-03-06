@@ -363,24 +363,6 @@ class _HomeState extends State<Home> {
                         ),
                       ],
                     ),
-                    Column(
-                      children: [
-                        IconButton(
-                          onPressed: () {
-                            // Implement map opening functionality here if needed
-                          },
-                          icon: const Icon(Icons.map, color: Colors.blue),
-                          tooltip: 'Open Location',
-                        ),
-                        Text(
-                          'Open Location With',
-                          style: GoogleFonts.balooBhai2(
-                            fontSize: 12,
-                            color: Colors.blue,
-                          ),
-                        ),
-                      ],
-                    ),
                   ],
                 ),
               ],
